@@ -16,13 +16,16 @@
         
         <!-- Address Bar -->
         <div class="address-bar">
-            <input type="text" id="url" value="http://web.archive.org/web/19990101000000*/http://www.example.com" readonly>
-            <button id="goBtn">Go</button>
+            <input type="text" id="url" value="http://www.example.com" readonly>
+            <button id="goBtn" disabled>Go</button>
         </div>
 
-        <!-- Browser Window -->
+        <!-- Browser Window (Simulating a loaded page) -->
         <div class="browser-content">
-            <iframe id="web-frame" src="http://web.archive.org/web/19990101000000*/http://www.example.com"></iframe>
+            <div id="content" class="loading">
+                <h2>Loading...</h2>
+                <p>Please wait while the page is loading...</p>
+            </div>
         </div>
 
         <!-- Status Bar -->
