@@ -1,22 +1,16 @@
-// When the page loads, simulate browsing the web in 1999
+// When the page loads, set the address bar URL and display the 1999 Wayback Machine iframe
 window.onload = function() {
-    const iframeContainer = document.getElementById("content");
+    const url = "http://www.example.com";  // Replace with any 1999 URL
+    const iframe = document.getElementById('web-frame');
+    const addressBar = document.getElementById('url');
 
-    // URL and simulating loading a page
-    const url = "http://www.example.com";  // Replace with your desired 1999-era URL
+    // Set the address bar to the 1999-style URL
+    addressBar.value = url;
 
-    // Update the address bar and status bar
-    document.getElementById("url").value = url;
+    // Set the iframe to load the Wayback Machine snapshot for 1999
+    iframe.src = "http://web.archive.org/web/19990101000000*/" + url;
 
+    // Update the status bar to "Ready"
     const statusBar = document.querySelector('.ie-status-bar span');
-    statusBar.textContent = 'Loading...';
-
-    // Simulate a loading process (could be a simple setTimeout to mimic the old loading bar)
-    setTimeout(function() {
-        // Simulate a page loading and show content
-        iframeContainer.innerHTML = `<h1>Welcome to ${url}</h1><p>This is a 1999-style web page simulation!</p>`;
-        
-        // Update status bar to "Ready"
-        statusBar.textContent = 'Ready';
-    }, 3000);  // Simulated load time (3 seconds)
+    statusBar.textContent = 'Ready';
 };

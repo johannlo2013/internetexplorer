@@ -73,15 +73,10 @@
     border-top: 1px solid #ddd;
 }
 
-#content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#web-frame {
+    width: 100%;
     height: 100%;
-}
-
-#content.loading h2 {
-    color: #333;
+    border: none;
 }
 
 /* Status bar */
