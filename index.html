@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Explorer 1999</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ie-window">
+        <!-- Title Bar -->
+        <div class="ie-title-bar">
+            <span class="ie-title">Internet Explorer</span>
+            <span class="ie-version">5.0</span>
+        </div>
+        
+        <!-- Address Bar -->
+        <div class="address-bar">
+            <input type="text" id="url" value="http://web.archive.org/web/19990101000000*/http://www.example.com" readonly>
+            <button id="goBtn">Go</button>
+        </div>
+
+        <!-- Browser Window -->
+        <div class="browser-content">
+            <iframe id="web-frame" src="http://web.archive.org/web/19990101000000*/http://www.example.com"></iframe>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="ie-status-bar">
+            <span>Ready</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
