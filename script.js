@@ -1,6 +1,6 @@
 // When the page loads, set the address bar URL and display the 1999 Wayback Machine iframe
 window.onload = function() {
-    const url = "http://www.example.com";  // Replace with any 1999 URL
+    const url = "http://www.aol.com";  // Replace with any 1999 URL
     const iframe = document.getElementById('web-frame');
     const addressBar = document.getElementById('url');
 
